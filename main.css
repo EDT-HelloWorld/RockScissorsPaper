@@ -2,3 +2,67 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.display {
+  display: flex;
+}
+
+.display div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px;
+}
+
+.group-buttons button {
+  padding: 5px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+#modal {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#result {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result .result-buttons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
